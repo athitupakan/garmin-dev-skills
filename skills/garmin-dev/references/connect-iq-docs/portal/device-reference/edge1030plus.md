@@ -1,0 +1,306 @@
+---
+source: https://developer.garmin.com/connect-iq/device-reference/edge1030plus/
+sdk: 9.1.0
+fetched: 2026-05-30
+generated: auto-converted from SDK doc/docs/Device_Reference/edge1030plus.html via _refresh/htmlmd.js — faithful mirror, not hand-curated
+---
+
+# Edge® 1030 Plus
+
+| Attribute | Value |
+| --- | --- |
+| Id | edge1030plus |
+| Screen Shape | rectangle |
+| Screen Size | 282 x 470 |
+| Display Colors | 65536 |
+| Touch | True |
+| Buttons | start, lap, menu, esc |
+| Launcher Icon Size | 36 x 36 |
+
+**App Types**
+
+| App Type | Memory Limit | Notes |
+| --- | --- | --- |
+| Background | 32768 | Requires Permission |
+| Data Field | 131072 |  |
+| Watch App | 1048576 |  |
+| Widget | 1048576 |  |
+
+**1 Field Layout**
+
+| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Field 1 | 0 | 0 | 282 | 470 | 0 | False | False | False | False |
+
+**2 Fields Layout**
+
+| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Field 1 | 0 | 0 | 282 | 234 | 0 | False | False | False | False |
+| Field 2 | 0 | 236 | 282 | 234 | 0 | False | False | False | False |
+
+**3 Fields A Layout**
+
+| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Field 1 | 0 | 0 | 282 | 155 | 0 | False | False | False | False |
+| Field 2 | 0 | 158 | 282 | 154 | 0 | False | False | False | False |
+| Field 3 | 0 | 315 | 282 | 155 | 0 | False | False | False | False |
+
+**3 Fields B Layout**
+
+| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Field 1 | 0 | 0 | 282 | 93 | 0 | False | False | False | False |
+| Field 2 | 0 | 95 | 282 | 186 | 0 | False | False | False | False |
+| Field 3 | 0 | 283 | 282 | 187 | 0 | False | False | False | False |
+
+**4 Fields A Layout**
+
+| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Field 1 | 0 | 0 | 282 | 116 | 0 | False | False | False | False |
+| Field 2 | 0 | 119 | 282 | 115 | 0 | False | False | False | False |
+| Field 3 | 0 | 237 | 282 | 115 | 0 | False | False | False | False |
+| Field 4 | 0 | 354 | 282 | 116 | 0 | False | False | False | False |
+
+**4 Fields B Layout**
+
+| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Field 1 | 0 | 0 | 140 | 93 | 0 | False | False | False | False |
+| Field 2 | 142 | 0 | 140 | 93 | 0 | False | False | False | False |
+| Field 3 | 0 | 95 | 282 | 186 | 0 | False | False | False | False |
+| Field 4 | 0 | 283 | 282 | 187 | 0 | False | False | False | False |
+
+**5 Fields A Layout**
+
+| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Field 1 | 0 | 0 | 282 | 93 | 0 | False | False | False | False |
+| Field 2 | 0 | 95 | 282 | 92 | 0 | False | False | False | False |
+| Field 3 | 0 | 189 | 282 | 92 | 0 | False | False | False | False |
+| Field 4 | 0 | 283 | 282 | 92 | 0 | False | False | False | False |
+| Field 5 | 0 | 377 | 282 | 93 | 0 | False | False | False | False |
+
+**5 Fields B Layout**
+
+| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Field 1 | 0 | 0 | 282 | 93 | 0 | False | False | False | False |
+| Field 2 | 0 | 95 | 282 | 186 | 0 | False | False | False | False |
+| Field 3 | 0 | 283 | 140 | 92 | 0 | False | False | False | False |
+| Field 4 | 142 | 283 | 140 | 92 | 0 | False | False | False | False |
+| Field 5 | 0 | 377 | 282 | 93 | 0 | False | False | False | False |
+
+**6 Fields A Layout**
+
+| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Field 1 | 0 | 0 | 282 | 93 | 0 | False | False | False | False |
+| Field 2 | 0 | 95 | 282 | 92 | 0 | False | False | False | False |
+| Field 3 | 0 | 189 | 282 | 92 | 0 | False | False | False | False |
+| Field 4 | 0 | 283 | 282 | 92 | 0 | False | False | False | False |
+| Field 5 | 0 | 377 | 140 | 93 | 0 | False | False | False | False |
+| Field 6 | 142 | 377 | 140 | 93 | 0 | False | False | False | False |
+
+**6 Fields B Layout**
+
+| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Field 1 | 0 | 0 | 140 | 93 | 0 | False | False | False | False |
+| Field 2 | 142 | 0 | 140 | 93 | 0 | False | False | False | False |
+| Field 3 | 0 | 95 | 282 | 186 | 0 | False | False | False | False |
+| Field 4 | 0 | 283 | 282 | 92 | 0 | False | False | False | False |
+| Field 5 | 0 | 377 | 140 | 93 | 0 | False | False | False | False |
+| Field 6 | 142 | 377 | 140 | 93 | 0 | False | False | False | False |
+
+**7 Fields A Layout**
+
+| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Field 1 | 0 | 0 | 282 | 93 | 0 | False | False | False | False |
+| Field 2 | 0 | 95 | 282 | 92 | 0 | False | False | False | False |
+| Field 3 | 0 | 189 | 282 | 92 | 0 | False | False | False | False |
+| Field 4 | 0 | 283 | 140 | 92 | 0 | False | False | False | False |
+| Field 5 | 142 | 283 | 140 | 92 | 0 | False | False | False | False |
+| Field 6 | 0 | 377 | 140 | 93 | 0 | False | False | False | False |
+| Field 7 | 142 | 377 | 140 | 93 | 0 | False | False | False | False |
+
+**7 Fields B Layout**
+
+| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Field 1 | 0 | 0 | 140 | 93 | 0 | False | False | False | False |
+| Field 2 | 142 | 0 | 140 | 93 | 0 | False | False | False | False |
+| Field 3 | 0 | 95 | 282 | 186 | 0 | False | False | False | False |
+| Field 4 | 0 | 283 | 140 | 92 | 0 | False | False | False | False |
+| Field 5 | 142 | 283 | 140 | 92 | 0 | False | False | False | False |
+| Field 6 | 0 | 377 | 140 | 93 | 0 | False | False | False | False |
+| Field 7 | 142 | 377 | 140 | 93 | 0 | False | False | False | False |
+
+**8 Fields Layout**
+
+| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Field 1 | 0 | 0 | 282 | 93 | 0 | False | False | False | False |
+| Field 2 | 0 | 95 | 282 | 92 | 0 | False | False | False | False |
+| Field 3 | 0 | 189 | 140 | 92 | 0 | False | False | False | False |
+| Field 4 | 142 | 189 | 140 | 92 | 0 | False | False | False | False |
+| Field 5 | 0 | 283 | 140 | 92 | 0 | False | False | False | False |
+| Field 6 | 142 | 283 | 140 | 92 | 0 | False | False | False | False |
+| Field 7 | 0 | 377 | 140 | 93 | 0 | False | False | False | False |
+| Field 8 | 142 | 377 | 140 | 93 | 0 | False | False | False | False |
+
+**9 Fields Layout**
+
+| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Field 1 | 0 | 0 | 282 | 93 | 0 | False | False | False | False |
+| Field 2 | 0 | 95 | 140 | 92 | 0 | False | False | False | False |
+| Field 3 | 142 | 95 | 140 | 92 | 0 | False | False | False | False |
+| Field 4 | 0 | 189 | 140 | 92 | 0 | False | False | False | False |
+| Field 5 | 142 | 189 | 140 | 92 | 0 | False | False | False | False |
+| Field 6 | 0 | 283 | 140 | 92 | 0 | False | False | False | False |
+| Field 7 | 142 | 283 | 140 | 92 | 0 | False | False | False | False |
+| Field 8 | 0 | 377 | 140 | 93 | 0 | False | False | False | False |
+| Field 9 | 142 | 377 | 140 | 93 | 0 | False | False | False | False |
+
+**10 Fields Layout**
+
+| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Field 1 | 0 | 0 | 140 | 93 | 0 | False | False | False | False |
+| Field 2 | 142 | 0 | 140 | 93 | 0 | False | False | False | False |
+| Field 3 | 0 | 95 | 140 | 92 | 0 | False | False | False | False |
+| Field 4 | 142 | 95 | 140 | 92 | 0 | False | False | False | False |
+| Field 5 | 0 | 189 | 140 | 92 | 0 | False | False | False | False |
+| Field 6 | 142 | 189 | 140 | 92 | 0 | False | False | False | False |
+| Field 7 | 0 | 283 | 140 | 92 | 0 | False | False | False | False |
+| Field 8 | 142 | 283 | 140 | 92 | 0 | False | False | False | False |
+| Field 9 | 0 | 377 | 140 | 93 | 0 | False | False | False | False |
+| Field 10 | 142 | 377 | 140 | 93 | 0 | False | False | False | False |
+
+**Part Number 006-B3570-00**
+
+*Languages*
+
+ces, dan, deu, dut, eng, fin, fre, gre, hrv, hun, ita, nob, pol, por, rus, slo, slv, spa, swe
+
+*Fonts*
+
+| Font Symbol | Font Face | Font Size | Font |
+| --- | --- | --- | --- |
+| FONT_XTINY | Roboto Condensed | 16 | ROBOTO_CONDENSED_16 |
+| FONT_TINY | Roboto Condensed | 22 | ROBOTO_CONDENSED_22 |
+| FONT_SMALL | Roboto Condensed | 26 | ROBOTO_CONDENSED_26 |
+| FONT_MEDIUM | Roboto Condensed | 29 | ROBOTO_CONDENSED_29 |
+| FONT_LARGE | Roboto Condensed | 48 | ROBOTO_CONDENSED_48 |
+| FONT_NUMBER_MILD | Garmin | 42 | DEJAVU_FITNESS_30 |
+| FONT_NUMBER_MEDIUM | Garmin | 49 | DEJAVU_FITNESS_35 |
+| FONT_NUMBER_HOT | Garmin | 66 | DEJAVU_FITNESS_47 |
+| FONT_NUMBER_THAI_HOT | Garmin | 81 | DEJAVU_FITNESS_58 |
+| FONT_GLANCE | Roboto Condensed | 16 | ROBOTO_CONDENSED_16 |
+| FONT_GLANCE_NUMBER | Roboto Condensed | 16 | ROBOTO_CONDENSED_16 |
+
+**Part Number 006-B3812-00**
+
+*Languages*
+
+eng, ind, zsm
+
+*Fonts*
+
+| Font Symbol | Font Face | Font Size | Font |
+| --- | --- | --- | --- |
+| FONT_XTINY | Roboto Condensed | 16 | ROBOTO_CONDENSED_16 |
+| FONT_TINY | Roboto Condensed | 22 | ROBOTO_CONDENSED_22 |
+| FONT_SMALL | Roboto Condensed | 26 | ROBOTO_CONDENSED_26 |
+| FONT_MEDIUM | Roboto Condensed | 29 | ROBOTO_CONDENSED_29 |
+| FONT_LARGE | Roboto Condensed | 48 | ROBOTO_CONDENSED_48 |
+| FONT_NUMBER_MILD | Garmin | 42 | DEJAVU_FITNESS_30 |
+| FONT_NUMBER_MEDIUM | Garmin | 49 | DEJAVU_FITNESS_35 |
+| FONT_NUMBER_HOT | Garmin | 66 | DEJAVU_FITNESS_47 |
+| FONT_NUMBER_THAI_HOT | Garmin | 81 | DEJAVU_FITNESS_58 |
+| FONT_GLANCE | Roboto Condensed | 16 | ROBOTO_CONDENSED_16 |
+| FONT_GLANCE_NUMBER | Roboto Condensed | 16 | ROBOTO_CONDENSED_16 |
+
+*Languages*
+
+zhs, zht
+
+*Fonts*
+
+| Font Symbol | Font Face | Font Size | Font |
+| --- | --- | --- | --- |
+| FONT_XTINY | DFHeiW5-A | 15 | DFHEI_15 |
+| FONT_TINY | DFHeiW5-A | 22 | DFHEI_22 |
+| FONT_SMALL | DFHeiW5-A | 25 | DFHEI_25 |
+| FONT_MEDIUM | DFHeiW5-A | 29 | DFHEI_29 |
+| FONT_LARGE | DFHeiW5-A | 43 | DFHEI_43 |
+| FONT_NUMBER_MILD | Garmin | 42 | DEJAVU_FITNESS_30 |
+| FONT_NUMBER_MEDIUM | Garmin | 49 | DEJAVU_FITNESS_35 |
+| FONT_NUMBER_HOT | Garmin | 66 | DEJAVU_FITNESS_47 |
+| FONT_NUMBER_THAI_HOT | Garmin | 81 | DEJAVU_FITNESS_58 |
+| FONT_GLANCE | DFHeiW5-A | 15 | DFHEI_15 |
+| FONT_GLANCE_NUMBER | DFHeiW5-A | 15 | DFHEI_15 |
+
+*Languages*
+
+jpn
+
+*Fonts*
+
+| Font Symbol | Font Face | Font Size | Font |
+| --- | --- | --- | --- |
+| FONT_XTINY | DFPHSGothic-W3 | 15 | DFPHSGOTHIC_15 |
+| FONT_TINY | DFPHSGothic-W3 | 22 | DFPHSGOTHIC_22 |
+| FONT_SMALL | DFPHSGothic-W3 | 25 | DFPHSGOTHIC_25 |
+| FONT_MEDIUM | DFPHSGothic-W3 | 29 | DFPHSGOTHIC_29 |
+| FONT_LARGE | DFPHSGothic-W3 | 43 | DFPHSGOTHIC_43 |
+| FONT_NUMBER_MILD | Garmin | 42 | DEJAVU_FITNESS_30 |
+| FONT_NUMBER_MEDIUM | Garmin | 49 | DEJAVU_FITNESS_35 |
+| FONT_NUMBER_HOT | Garmin | 66 | DEJAVU_FITNESS_47 |
+| FONT_NUMBER_THAI_HOT | Garmin | 81 | DEJAVU_FITNESS_58 |
+| FONT_GLANCE | DFPHSGothic-W3 | 15 | DFPHSGOTHIC_15 |
+| FONT_GLANCE_NUMBER | DFPHSGothic-W3 | 15 | DFPHSGOTHIC_15 |
+
+*Languages*
+
+kor
+
+*Fonts*
+
+| Font Symbol | Font Face | Font Size | Font |
+| --- | --- | --- | --- |
+| FONT_XTINY | NanumGothicCoding-Bold | 15 | NANUMGOTHICCODING_BOLD_15 |
+| FONT_TINY | NanumGothicCoding-Bold | 22 | NANUMGOTHICCODING_BOLD_22 |
+| FONT_SMALL | NanumGothicCoding-Bold | 25 | NANUMGOTHICCODING_BOLD_25 |
+| FONT_MEDIUM | NanumGothicCoding-Bold | 29 | NANUMGOTHICCODING_BOLD_29 |
+| FONT_LARGE | NanumGothicCoding-Bold | 43 | NANUMGOTHICCODING_BOLD_43 |
+| FONT_NUMBER_MILD | Garmin | 42 | DEJAVU_FITNESS_30 |
+| FONT_NUMBER_MEDIUM | Garmin | 49 | DEJAVU_FITNESS_35 |
+| FONT_NUMBER_HOT | Garmin | 66 | DEJAVU_FITNESS_47 |
+| FONT_NUMBER_THAI_HOT | Garmin | 81 | DEJAVU_FITNESS_58 |
+| FONT_GLANCE | NanumGothicCoding-Bold | 15 | NANUMGOTHICCODING_BOLD_15 |
+| FONT_GLANCE_NUMBER | NanumGothicCoding-Bold | 15 | NANUMGOTHICCODING_BOLD_15 |
+
+*Languages*
+
+tha
+
+*Fonts*
+
+| Font Symbol | Font Face | Font Size | Font |
+| --- | --- | --- | --- |
+| FONT_XTINY | Vera Sans | 16 | bitstreamVeraSans 16 |
+| FONT_TINY | Vera Sans | 16 | bitstreamVeraSans 16 |
+| FONT_SMALL | Vera Sans | 16 | bitstreamVeraSans 16 |
+| FONT_MEDIUM | Vera Sans | 21 | bitstreamVeraSans 21 |
+| FONT_LARGE | Vera Sans | 27 | bitstreamVeraSans 27 |
+| FONT_NUMBER_MILD | Garmin | 42 | DEJAVU_FITNESS_30 |
+| FONT_NUMBER_MEDIUM | Garmin | 49 | DEJAVU_FITNESS_35 |
+| FONT_NUMBER_HOT | Garmin | 66 | DEJAVU_FITNESS_47 |
+| FONT_NUMBER_THAI_HOT | Garmin | 81 | DEJAVU_FITNESS_58 |
+| FONT_GLANCE | Vera Sans | 16 | bitstreamVeraSans 16 |
+| FONT_GLANCE_NUMBER | Vera Sans | 16 | bitstreamVeraSans 16 |

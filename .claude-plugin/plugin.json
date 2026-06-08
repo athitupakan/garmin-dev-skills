@@ -1,0 +1,13 @@
+{
+  "name": "garmin-dev",
+  "version": "0.1.0",
+  "description": "Build, run, package, and ship a Garmin Connect IQ app (watch face, data field, widget, device app) on Windows, macOS, or Linux. Auto-detects SDK + JDK + project name + target device from manifest.xml — no per-machine config.",
+  "author": {
+    "name": "Athit",
+    "url": "https://github.com/athitupakan"
+  },
+  "homepage": "https://github.com/athitupakan/garmin-dev-skills",
+  "repository": "https://github.com/athitupakan/garmin-dev-skills",
+  "license": "MIT",
+  "keywords": ["garmin", "connect-iq", "monkey-c", "watch-face", "monkeyc"]
+}

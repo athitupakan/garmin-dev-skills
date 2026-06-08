@@ -1,0 +1,237 @@
+---
+source: https://developer.garmin.com/connect-iq/device-reference/fr255sm/
+sdk: 9.1.0
+fetched: 2026-05-30
+generated: auto-converted from SDK doc/docs/Device_Reference/fr255sm.html via _refresh/htmlmd.js — faithful mirror, not hand-curated
+---
+
+# Forerunner® 255s Music
+
+| Attribute | Value |
+| --- | --- |
+| Id | fr255sm |
+| Screen Shape | round |
+| Screen Size | 218 x 218 |
+| Display Colors | 64 |
+| Touch | False |
+| Buttons | enter, up, menu, down, esc |
+| Launcher Icon Size | 40 x 40 |
+
+**App Types**
+
+| App Type | Memory Limit | Notes |
+| --- | --- | --- |
+| Audio Content Provider | 524288 |  |
+| Background | 65536 | Requires Permission |
+| Data Field | 262144 |  |
+| Glance | 65536 | Build as Watch App or Widget |
+| Watch App | 786432 |  |
+| Watch Face | 131072 |  |
+| Widget | 786432 | Requires 4.x SDK |
+
+**1 Field Layout**
+
+| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Field 1 | 0 | 0 | 218 | 218 | 15 | True | True | True | True |
+
+**2 Fields Layout**
+
+| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Field 1 | 0 | 0 | 218 | 108 | 7 | True | True | True | False |
+| Field 2 | 0 | 110 | 218 | 108 | 13 | True | True | False | True |
+
+**3 Fields A Layout**
+
+| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Field 1 | 0 | 0 | 218 | 76 | 7 | True | True | True | False |
+| Field 2 | 0 | 76 | 218 | 62 | 5 | True | True | False | False |
+| Field 3 | 0 | 138 | 218 | 80 | 13 | True | True | False | True |
+
+**3 Fields B Layout**
+
+| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Field 1 | 0 | 0 | 218 | 70 | 7 | True | True | True | False |
+| Field 2 | 0 | 72 | 218 | 75 | 5 | True | True | False | False |
+| Field 3 | 0 | 149 | 218 | 69 | 13 | True | True | False | True |
+
+**3 Fields C Layout**
+
+| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Field 1 | 0 | 0 | 218 | 108 | 7 | True | True | True | False |
+| Field 2 | 0 | 110 | 108 | 108 | 9 | True | False | False | True |
+| Field 3 | 110 | 110 | 108 | 108 | 12 | False | True | False | True |
+
+**4 Fields A Layout**
+
+| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Field 1 | 0 | 0 | 218 | 77 | 7 | True | True | True | False |
+| Field 2 | 0 | 79 | 108 | 65 | 1 | True | False | False | False |
+| Field 3 | 110 | 79 | 108 | 65 | 4 | False | True | False | False |
+| Field 4 | 0 | 146 | 218 | 72 | 13 | True | True | False | True |
+
+**4 Fields B Layout**
+
+| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Field 1 | 0 | 0 | 108 | 108 | 3 | True | False | True | False |
+| Field 2 | 110 | 0 | 108 | 108 | 6 | False | True | True | False |
+| Field 3 | 0 | 110 | 108 | 108 | 9 | True | False | False | True |
+| Field 4 | 110 | 110 | 108 | 108 | 12 | False | True | False | True |
+
+**4 Fields C Layout**
+
+| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Field 1 | 0 | 0 | 218 | 54 | 7 | True | True | True | False |
+| Field 2 | 0 | 56 | 218 | 52 | 5 | True | True | False | False |
+| Field 3 | 0 | 110 | 218 | 53 | 5 | True | True | False | False |
+| Field 4 | 0 | 165 | 218 | 53 | 13 | True | True | False | True |
+
+**5 Fields Layout**
+
+| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Field 1 | 0 | 0 | 218 | 54 | 7 | True | True | True | False |
+| Field 2 | 0 | 56 | 218 | 52 | 5 | True | True | False | False |
+| Field 3 | 0 | 110 | 108 | 53 | 1 | True | False | False | False |
+| Field 4 | 110 | 110 | 108 | 53 | 4 | False | True | False | False |
+| Field 5 | 0 | 165 | 218 | 53 | 13 | True | True | False | True |
+
+**6 Fields Layout**
+
+| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Field 1 | 0 | 0 | 218 | 54 | 7 | True | True | True | False |
+| Field 2 | 0 | 56 | 108 | 52 | 1 | True | False | False | False |
+| Field 3 | 110 | 56 | 108 | 52 | 4 | False | True | False | False |
+| Field 4 | 0 | 110 | 108 | 53 | 1 | True | False | False | False |
+| Field 5 | 110 | 110 | 108 | 53 | 4 | False | True | False | False |
+| Field 6 | 0 | 165 | 218 | 53 | 13 | True | True | False | True |
+
+**Part Number 006-B3991-00**
+
+*Languages*
+
+ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ind, ita, lav, lit, nob, pol, por, ron, rus, slo, slv, spa, swe, tur, ukr, zsm
+
+*Fonts*
+
+| Font Symbol | Font Face | Font Size | Font |
+| --- | --- | --- | --- |
+| FONT_XTINY | Roboto Condensed | 19 | 006B399100_CDPG_ROBOTO_13B |
+| FONT_TINY | Roboto Condensed | 23 | 006B399100_CDPG_ROBOTO_15B |
+| FONT_SMALL | Roboto Condensed | 26 | 006B399100_CDPG_ROBOTO_17B |
+| FONT_MEDIUM | Roboto Condensed | 31 | 006B399100_CDPG_ROBOTO_20B |
+| FONT_LARGE | Roboto Condensed | 31 | 006B399100_CDPG_ROBOTO_20B |
+| FONT_NUMBER_MILD | Roboto Condensed | 40 | 006B399100_ROBOTO_BC_NUMBER_FONT_25 |
+| FONT_NUMBER_MEDIUM | Roboto Condensed | 53 | 006B399100_ROBOTO_BC_NUMBER_FONT_32 |
+| FONT_NUMBER_HOT | Roboto Black | 74 | 006B399100_ROBOTO_BLACK_NUMBER_FONT_41 |
+| FONT_NUMBER_THAI_HOT | Roboto Black | 86 | 006B399100_ROBOTO_BLACK_NUMBER_FONT_48 |
+| FONT_GLANCE | Roboto Condensed | 19 | 006B399100_CDPG_ROBOTO_13B |
+| FONT_GLANCE_NUMBER | Roboto Condensed | 23 | 006B399100_CDPG_ROBOTO_15B |
+
+*Languages*
+
+zhs, zht
+
+*Fonts*
+
+| Font Symbol | Font Face | Font Size | Font |
+| --- | --- | --- | --- |
+| FONT_XTINY | Noto Sans SC Bold-94 | 16 | NOTO_SANS_SC_BOLD_94_CHN_16 |
+| FONT_TINY | Noto Sans SC Bold-94 | 18 | NOTO_SANS_SC_BOLD_94_CHN_18 |
+| FONT_SMALL | Noto Sans SC Bold-94 | 22 | NOTO_SANS_SC_BOLD_94_CHN_22 |
+| FONT_MEDIUM | Noto Sans SC Bold-94 | 26 | NOTO_SANS_SC_BOLD_94_CHN_26 |
+| FONT_LARGE | Noto Sans SC Bold-94 | 26 | NOTO_SANS_SC_BOLD_94_CHN_26 |
+| FONT_NUMBER_MILD | Roboto Condensed | 40 | 006B399100_ROBOTO_BC_NUMBER_FONT_25 |
+| FONT_NUMBER_MEDIUM | Roboto Condensed | 53 | 006B399100_ROBOTO_BC_NUMBER_FONT_32 |
+| FONT_NUMBER_HOT | Roboto Black | 74 | 006B399100_ROBOTO_BLACK_NUMBER_FONT_41 |
+| FONT_NUMBER_THAI_HOT | Roboto Black | 86 | 006B399100_ROBOTO_BLACK_NUMBER_FONT_48 |
+| FONT_GLANCE | Noto Sans SC Bold-94 | 18 | NOTO_SANS_SC_BOLD_94_CHN_18 |
+| FONT_GLANCE_NUMBER | Roboto Condensed | 23 | 006B399100_CDPG_ROBOTO_15B |
+
+*Languages*
+
+jpn
+
+*Fonts*
+
+| Font Symbol | Font Face | Font Size | Font |
+| --- | --- | --- | --- |
+| FONT_XTINY | MotoyaLCedar-94 | 16 | KOSUGI_REGULAR-94_JPN_16B |
+| FONT_TINY | MotoyaLCedar-94 | 18 | KOSUGI_REGULAR-94_JPN_18B |
+| FONT_SMALL | MotoyaLCedar-94 | 22 | KOSUGI_REGULAR-94_JPN_22B |
+| FONT_MEDIUM | MotoyaLCedar-94 | 26 | KOSUGI_REGULAR-94_JPN_26B |
+| FONT_LARGE | MotoyaLCedar-94 | 26 | KOSUGI_REGULAR-94_JPN_26B |
+| FONT_NUMBER_MILD | Roboto Condensed | 40 | 006B399100_ROBOTO_BC_NUMBER_FONT_25 |
+| FONT_NUMBER_MEDIUM | Roboto Condensed | 53 | 006B399100_ROBOTO_BC_NUMBER_FONT_32 |
+| FONT_NUMBER_HOT | Roboto Black | 74 | 006B399100_ROBOTO_BLACK_NUMBER_FONT_41 |
+| FONT_NUMBER_THAI_HOT | Roboto Black | 86 | 006B399100_ROBOTO_BLACK_NUMBER_FONT_48 |
+| FONT_GLANCE | MotoyaLCedar-94 | 18 | KOSUGI_REGULAR-94_JPN_18B |
+| FONT_GLANCE_NUMBER | Roboto Condensed | 23 | 006B399100_CDPG_ROBOTO_15B |
+
+*Languages*
+
+kor
+
+*Fonts*
+
+| Font Symbol | Font Face | Font Size | Font |
+| --- | --- | --- | --- |
+| FONT_XTINY | NanumGothicExtraBold-94 | 16 | NANUM_GOTHIC_BOLD_KOR_16B |
+| FONT_TINY | NanumGothicExtraBold-94 | 18 | NANUM_GOTHIC_BOLD_KOR_18B |
+| FONT_SMALL | NanumGothicExtraBold-94 | 22 | NANUM_GOTHIC_BOLD_KOR_22B |
+| FONT_MEDIUM | NanumGothicExtraBold-94 | 26 | NANUM_GOTHIC_BOLD_KOR_26B |
+| FONT_LARGE | NanumGothicExtraBold-94 | 26 | NANUM_GOTHIC_BOLD_KOR_26B |
+| FONT_NUMBER_MILD | Roboto Condensed | 40 | 006B399100_ROBOTO_BC_NUMBER_FONT_25 |
+| FONT_NUMBER_MEDIUM | Roboto Condensed | 53 | 006B399100_ROBOTO_BC_NUMBER_FONT_32 |
+| FONT_NUMBER_HOT | Roboto Black | 74 | 006B399100_ROBOTO_BLACK_NUMBER_FONT_41 |
+| FONT_NUMBER_THAI_HOT | Roboto Black | 86 | 006B399100_ROBOTO_BLACK_NUMBER_FONT_48 |
+| FONT_GLANCE | NanumGothicExtraBold-94 | 18 | NANUM_GOTHIC_BOLD_KOR_18B |
+| FONT_GLANCE_NUMBER | Roboto Condensed | 23 | 006B399100_CDPG_ROBOTO_15B |
+
+*Languages*
+
+tha
+
+*Fonts*
+
+| Font Symbol | Font Face | Font Size | Font |
+| --- | --- | --- | --- |
+| FONT_XTINY | Vera Sans | 16 | bitstreamVeraSans 16 |
+| FONT_TINY | Vera Sans | 16 | bitstreamVeraSans 16 |
+| FONT_SMALL | Vera Sans | 16 | bitstreamVeraSans 16 |
+| FONT_MEDIUM | Vera Sans | 21 | bitstreamVeraSans 21 |
+| FONT_LARGE | Vera Sans | 27 | bitstreamVeraSans 27 |
+| FONT_NUMBER_MILD | Roboto Condensed | 40 | 006B399100_ROBOTO_BC_NUMBER_FONT_25 |
+| FONT_NUMBER_MEDIUM | Roboto Condensed | 53 | 006B399100_ROBOTO_BC_NUMBER_FONT_32 |
+| FONT_NUMBER_HOT | Roboto Black | 74 | 006B399100_ROBOTO_BLACK_NUMBER_FONT_41 |
+| FONT_NUMBER_THAI_HOT | Roboto Black | 86 | 006B399100_ROBOTO_BLACK_NUMBER_FONT_48 |
+| FONT_GLANCE | Vera Sans | 16 | bitstreamVeraSans 16 |
+| FONT_GLANCE_NUMBER | Roboto Condensed | 23 | 006B399100_CDPG_ROBOTO_15B |
+
+*Languages*
+
+vie
+
+*Fonts*
+
+| Font Symbol | Font Face | Font Size | Font |
+| --- | --- | --- | --- |
+| FONT_XTINY | Roboto Condensed | 19 | ROBOTO_CONDENSED_BOLD_19B |
+| FONT_TINY | Roboto Condensed | 22 | ROBOTO_CONDENSED_BOLD_22B |
+| FONT_SMALL | Roboto Condensed | 26 | ROBOTO_CONDENSED_BOLD_26B |
+| FONT_MEDIUM | Roboto Condensed | 32 | ROBOTO_CONDENSED_BOLD_32B |
+| FONT_LARGE | Roboto Condensed | 32 | ROBOTO_CONDENSED_BOLD_32B |
+| FONT_NUMBER_MILD | Roboto Condensed | 40 | 006B399100_ROBOTO_BC_NUMBER_FONT_25 |
+| FONT_NUMBER_MEDIUM | Roboto Condensed | 53 | 006B399100_ROBOTO_BC_NUMBER_FONT_32 |
+| FONT_NUMBER_HOT | Roboto Black | 74 | 006B399100_ROBOTO_BLACK_NUMBER_FONT_41 |
+| FONT_NUMBER_THAI_HOT | Roboto Black | 86 | 006B399100_ROBOTO_BLACK_NUMBER_FONT_48 |
+| FONT_GLANCE | Roboto Condensed | 22 | ROBOTO_CONDENSED_BOLD_22B |
+| FONT_GLANCE_NUMBER | Roboto Condensed | 23 | 006B399100_CDPG_ROBOTO_15B |

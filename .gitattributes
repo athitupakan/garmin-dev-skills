@@ -1,0 +1,18 @@
+# Line-ending normalization for cross-platform consistency.
+# Without this, Windows git's autocrlf can checkin CRLF into .sh files,
+# which bash on macOS/Linux refuses to execute.
+
+# Default: let git decide based on content sniffing
+* text=auto
+
+# Shell scripts MUST be LF (bash chokes on CRLF)
+*.sh text eol=lf
+
+# PowerShell prefers CRLF on Windows; explicit just in case
+*.ps1 text eol=crlf
+
+# Plain text formats — LF everywhere for consistency
+*.md   text eol=lf
+*.json text eol=lf
+*.xml  text eol=lf
+*.js   text eol=lf
