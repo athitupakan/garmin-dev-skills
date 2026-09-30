@@ -5,7 +5,7 @@ standard views) so third-party apps can match the native device experience. Conv
 `doc/docs/Personality_Library/`. Part of the 📄 **portal** bucket; auto-converted mirrors (see the
 `generated:` frontmatter).
 
-**Cached against SDK:** 9.1.0 · batch 2026-05-30
+**Cached against SDK:** 9.2.0 · batch 2026-10-01
 
 | File | Topic |
 |------|-------|

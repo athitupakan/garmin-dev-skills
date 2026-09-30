@@ -1,7 +1,7 @@
 ---
 source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Weather.html
-sdk: 9.1.0
-fetched: 2026-05-30
+sdk: 9.2.0
+fetched: 2026-09-30
 generated: auto-converted from SDK doc/Toybox/Weather.html via _refresh/htmlmd.js — faithful mirror, not hand-curated
 ---
 
@@ -13,7 +13,7 @@ The Weather module provides functionality for accessing information related to t
 
 **Since:** API Level 3.2.0
 
-_Supported on 118 devices._
+_Supported on 119 devices._
 
 ## Classes Under Namespace
 
@@ -126,7 +126,7 @@ Get sunrise time for the provided location and date
 - location — (Position.Location) — Location to get the sunrise information
 - date — (Time.Moment) — date to get the sunrise information
 
-_Supported on 116 devices._
+_Supported on 117 devices._
 
 **Returns:**
 - Time.Moment — Sunrise time as moment or `null` if no sunrise time is available
@@ -141,7 +141,7 @@ Get sunrise time for the provided location and date
 - location — (Position.Location) — Location to get the sunset information
 - date — (Time.Moment) — date to get the sunset information
 
-_Supported on 116 devices._
+_Supported on 117 devices._
 
 **Returns:**
 - Time.Moment — Sunset time as moment or `null` if no sunset time is available.

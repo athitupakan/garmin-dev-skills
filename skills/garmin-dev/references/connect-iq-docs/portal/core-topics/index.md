@@ -4,7 +4,7 @@ Garmin's conceptual guides — the docs developers actually read while building.
 SDK's `doc/docs/Core_Topics/` (44 articles). Part of the 📄 **portal** bucket; all auto-converted
 mirrors (see the `generated:` frontmatter).
 
-**Cached against SDK:** 9.1.0 · batch 2026-05-30
+**Cached against SDK:** 9.2.0 · batch 2026-10-01
 
 ## App Fundamentals
 - [manifest-and-permissions.md](manifest-and-permissions.md) — `manifest.xml`, products, permissions

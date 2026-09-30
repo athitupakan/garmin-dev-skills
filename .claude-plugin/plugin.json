@@ -1,6 +1,6 @@
 {
   "name": "garmin-dev",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Build, run, package, and ship a Garmin Connect IQ app (watch face, data field, widget, device app) on Windows, macOS, or Linux. Auto-detects SDK + JDK + project name + target device from manifest.xml — no per-machine config.",
   "author": {
     "name": "Athit",

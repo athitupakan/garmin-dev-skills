@@ -1,7 +1,7 @@
 ---
 source: https://developer.garmin.com/connect-iq/core-topics/ant-and-ant-plus/
-sdk: 9.1.0
-fetched: 2026-05-30
+sdk: 9.2.0
+fetched: 2026-09-30
 generated: auto-converted from SDK doc/docs/Core_Topics/Ant_and_Ant_Plus.html via _refresh/htmlmd.js — faithful mirror, not hand-curated
 ---
 

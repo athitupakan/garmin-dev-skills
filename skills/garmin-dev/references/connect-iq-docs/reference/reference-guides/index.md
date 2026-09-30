@@ -3,7 +3,7 @@
 The language / build-system / toolchain spec pages from developer.garmin.com/connect-iq/reference-guides.
 Part of the 🔧 **sdk/api** bucket — version-pinned, sourced from the SDK install at `doc/docs/Reference_Guides/`.
 
-**Cached against SDK:** 9.1.0 · **Batch:** 2026-05-30
+**Cached against SDK:** 9.2.0 · **Batch:** 2026-10-01
 
 All files here are **auto-converted mirrors** (see the `generated:` frontmatter line) — faithful, not hand-curated.
 

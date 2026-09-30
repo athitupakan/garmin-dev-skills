@@ -1,7 +1,7 @@
 ---
 source: https://developer.garmin.com/connect-iq/device-reference/d2delta/
-sdk: 9.1.0
-fetched: 2026-05-30
+sdk: 9.2.0
+fetched: 2026-09-30
 generated: auto-converted from SDK doc/docs/Device_Reference/d2delta.html via _refresh/htmlmd.js — faithful mirror, not hand-curated
 ---
 

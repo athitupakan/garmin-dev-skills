@@ -1,7 +1,7 @@
 ---
 source: https://developer.garmin.com/connect-iq/core-topics/bluetooth-low-energy/
-sdk: 9.1.0
-fetched: 2026-05-30
+sdk: 9.2.0
+fetched: 2026-09-30
 generated: auto-converted from SDK doc/docs/Core_Topics/Bluetooth_Low_Energy.html via _refresh/htmlmd.js — faithful mirror, not hand-curated
 ---
 
@@ -19,6 +19,11 @@ When going through this guide, developers will want to keep a few things handy.
 - **An up-to-date Connect IQ SDK**To use the BLE APIs, developers should be working with the current version of the Connect IQ SDK.
 - **Firmware for the nRF52 DK**The memory layout of the nRF52 DK will need to be flashed to a different firmware for use with the Connect IQ SDK. The correct firmware for the development environment has been provided:nRF52 DK firmware
 - nRF52840 Dongle firmware
+
+**Note:** For SDKs prior to 9.2.0, use:
+
+- nRF52 DK firmware (old)
+- nRF52840 Dongle firmware (old)
 
 ## Windows
 

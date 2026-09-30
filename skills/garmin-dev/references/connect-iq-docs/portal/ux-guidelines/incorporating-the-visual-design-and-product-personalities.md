@@ -1,7 +1,7 @@
 ---
 source: https://developer.garmin.com/connect-iq/user-experience-guidelines/incorporating-the-visual-design-and-product-personalities/
-sdk: 9.1.0
-fetched: 2026-05-30
+sdk: 9.2.0
+fetched: 2026-09-30
 generated: auto-converted from SDK doc/docs/User_Experience_Guidelines/Incorporating_the_Visual_Design_and_Product_Personalities.html via _refresh/htmlmd.js — faithful mirror, not hand-curated
 ---
 

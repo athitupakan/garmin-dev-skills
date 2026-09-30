@@ -1,7 +1,7 @@
 ---
 source: https://developer.garmin.com/connect-iq/device-reference/edge840/
-sdk: 9.1.0
-fetched: 2026-05-30
+sdk: 9.2.0
+fetched: 2026-09-30
 generated: auto-converted from SDK doc/docs/Device_Reference/edge840.html via _refresh/htmlmd.js — faithful mirror, not hand-curated
 ---
 
@@ -27,7 +27,7 @@ generated: auto-converted from SDK doc/docs/Device_Reference/edge840.html via _r
 | Watch App | 1048576 |  |
 | Widget | 1048576 | Requires 4.x SDK |
 
-**1 Fields Layout**
+**1 Field Layout**
 
 | Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

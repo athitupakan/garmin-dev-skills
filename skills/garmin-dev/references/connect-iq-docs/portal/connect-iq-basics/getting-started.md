@@ -1,7 +1,7 @@
 ---
 source: https://developer.garmin.com/connect-iq/connect-iq-basics/getting-started/
-sdk: 9.1.0
-fetched: 2026-05-30
+sdk: 9.2.0
+fetched: 2026-09-30
 generated: auto-converted from SDK doc/docs/Connect_IQ_Basics/Getting_Started.html via _refresh/htmlmd.js — faithful mirror, not hand-curated
 ---
 
@@ -47,7 +47,7 @@ The Monkey C extension adds support for using the Connect IQ SDK, including a sy
 
 The Connect IQ compiler requires a developer key to sign apps when they're compiled and packaged. The required key must be a RSA 4096 bit private key.
 
-**Note**: It's important you keep track of the key you use to sign app packages. You will need to use the same key to sign updates to an existing app on the store. If you lose your original signing key you will not be able to update your app.
+**Note:** It's important you keep track of the key you use to sign app packages. You will need to use the same key to sign updates to an existing app on the store. If you lose your original signing key you will not be able to update your app.
 
 ##### Generating a Key Using the Monkey C Extension
 

@@ -1,7 +1,7 @@
 ---
 source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang.html
-sdk: 9.1.0
-fetched: 2026-05-30
+sdk: 9.2.0
+fetched: 2026-09-30
 generated: auto-converted from SDK doc/Toybox/Lang.html via _refresh/htmlmd.js — faithful mirror, not hand-curated
 ---
 

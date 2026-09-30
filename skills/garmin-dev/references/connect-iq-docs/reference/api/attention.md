@@ -1,7 +1,7 @@
 ---
 source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Attention.html
-sdk: 9.1.0
-fetched: 2026-05-30
+sdk: 9.2.0
+fetched: 2026-09-30
 generated: auto-converted from SDK doc/Toybox/Attention.html via _refresh/htmlmd.js — faithful mirror, not hand-curated
 ---
 
@@ -158,7 +158,7 @@ Passing a Float is only supported with ConnectIQ 3.2.1 and later.
 - setting — (Lang.Boolean, Lang.Float) — If `setting` is a Boolean, `false` will disable the backlight and `true` will enable the backlight at the system backlight level.
 - If `setting` is a Float, the value 0.0 will disable the backlight and values greater than 0.0 and less than or equal to 1.0 will enable the backlight at the specified brightness.
 
-_Supported on 161 devices._
+_Supported on 162 devices._
 
 **Since:** API Level 1.0.0
 
@@ -173,7 +173,7 @@ Determine if a given flashlight color is supported by this device
 **Parameters:**
 - color — (Attention.FlashlightColor) — Color to check
 
-_Supported on 27 devices._
+_Supported on 28 devices._
 
 **Returns:**
 - Returns true if the given color is supported, otherwise false.
@@ -218,7 +218,7 @@ if (Attention has :ToneProfile) {
    }
 ```
 
-_Supported on 138 devices._
+_Supported on 139 devices._
 
 **Since:** API Level 1.0.0
 
@@ -234,7 +234,7 @@ _Supported on 138 devices._
 - :strobeSpeed — (Attention.FlashlightStrobeSpeed) — Speed of strobe. Default is FLASHLIGHT_STROBE_SPEED_MEDIUM.
 - :brightness — (Lang.Number, Attention.FlashlightBrightness) — Intensity of the flashlight. Default is FLASHLIGHT_BRIGHTNESS_MEDIUM.
 
-_Supported on 27 devices._
+_Supported on 28 devices._
 
 **Returns:**
 - Attention.FlashlightResult — A FlashlightResult value indicating the operation status.
@@ -274,7 +274,7 @@ if (Attention has :vibrate) {
 Attention.vibrate(vibeData);
 ```
 
-_Supported on 136 devices._
+_Supported on 137 devices._
 
 **See Also:**
 

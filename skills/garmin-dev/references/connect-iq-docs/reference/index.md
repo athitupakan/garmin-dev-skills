@@ -2,7 +2,7 @@
 
 Version-pinned **technical** reference: the API, the language, and the toolchain spec. Everything here is sourced from the installed Connect IQ SDK (`doc/`), so it always matches the toolchain that compiles your `.prg`.
 
-**Cached against SDK:** 9.1.0 (build `connectiq-sdk-win-9.1.0-2026-03-09`)
+**Cached against SDK:** 9.2.0 (build `connectiq-sdk-mac-9.2.0-2026-06-09`)
 
 | Folder | What | SDK source |
 |--------|------|------------|

@@ -2,7 +2,7 @@
 
 Local cache of <https://developer.garmin.com/connect-iq/>, organized to mirror the official site.
 
-**Cached against SDK:** 9.1.0 (build `connectiq-sdk-win-9.1.0-2026-03-09`)
+**Cached against SDK:** 9.2.0 (build `connectiq-sdk-mac-9.2.0-2026-06-09`)
 **Last full refresh:** 2026-05-27
 
 This folder is **what Garmin published**. Workflow guides, dispatch contracts, and curated lookups live elsewhere in `references/` — they are **our** content.
@@ -68,7 +68,7 @@ Each section is tagged with its bucket and cache status. Cached pages link to lo
 
 Full per-page listings live in the section indexes: [portal/core-topics/index.md](portal/core-topics/index.md) (44 articles, grouped into 7 categories) and [portal/ux-guidelines/index.md](portal/ux-guidelines/index.md) (overview + 14 sub-pages). Connect IQ Basics (§7) → [portal/connect-iq-basics/index.md](portal/connect-iq-basics/index.md).
 
-Personality Library (§11) → [portal/personality-library/index.md](portal/personality-library/index.md) · Device Reference (§16, 163 devices) → [portal/device-reference/index.md](portal/device-reference/index.md). The whole portal taxonomy is now cached except the **online-only** pages (§1 Overview, §2 Compatible Devices, §4 Get the SDK, §6 Stay Informed).
+Personality Library (§11) → [portal/personality-library/index.md](portal/personality-library/index.md) · Device Reference (§16, 164 devices) → [portal/device-reference/index.md](portal/device-reference/index.md). The whole portal taxonomy is now cached except the **online-only** pages (§1 Overview, §2 Compatible Devices, §4 Get the SDK, §6 Stay Informed).
 
 ## App types Garmin watches can run
 

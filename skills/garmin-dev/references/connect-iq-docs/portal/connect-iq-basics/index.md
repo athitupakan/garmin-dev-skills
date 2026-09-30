@@ -3,7 +3,7 @@
 Onboarding + foundational concepts, converted from the SDK's `doc/docs/Connect_IQ_Basics/`.
 Part of the 📄 **portal** bucket. All pages are auto-converted mirrors (see the `generated:` frontmatter).
 
-**Cached against SDK:** 9.1.0 · batch 2026-05-30
+**Cached against SDK:** 9.2.0 · batch 2026-10-01
 
 | File | Page |
 |------|------|

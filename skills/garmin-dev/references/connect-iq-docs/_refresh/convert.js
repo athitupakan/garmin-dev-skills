@@ -9,11 +9,10 @@ const { convert } = require('./htmlmd.js');
 // connect-iq-docs/ is the parent of this _refresh/ folder.
 const REF = path.resolve(__dirname, '..');
 const TODAY = new Date().toISOString().slice(0, 10);
-const SDKVER = '9.1.0';
+const SDKVER = '9.2.0';
 
 function findSdkDoc() {
   if (process.env.SDK) return process.env.SDK;
-  // Windows default; adjust for macOS/Linux if running there.
   const roots = [
     path.join(process.env.APPDATA || '', 'Garmin', 'ConnectIQ', 'Sdks'),
     path.join(process.env.HOME || '', 'Library', 'Application Support', 'Garmin', 'ConnectIQ', 'Sdks'),
@@ -21,7 +20,10 @@ function findSdkDoc() {
   ];
   for (const root of roots) {
     if (!root || !fs.existsSync(root)) continue;
-    const dirs = fs.readdirSync(root).filter(d => /^connectiq-sdk-/.test(d)).sort();
+    // Sort by the ISO date in the name — a plain sort ranks 9.x above 10.x.
+    const stamp = d => d.split('-').slice(4, 7).join('-');
+    const dirs = fs.readdirSync(root).filter(d => /^connectiq-sdk-/.test(d))
+      .sort((a, b) => stamp(a).localeCompare(stamp(b)));
     if (dirs.length) return path.join(root, dirs[dirs.length - 1], 'doc');
   }
   throw new Error('No Connect IQ SDK found. Set SDK=<path-to-sdk>/doc and retry.');

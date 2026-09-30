@@ -1,7 +1,7 @@
 ---
 source: https://developer.garmin.com/connect-iq/core-topics/mobile-sdk-for-ios/
-sdk: 9.1.0
-fetched: 2026-05-30
+sdk: 9.2.0
+fetched: 2026-09-30
 generated: auto-converted from SDK doc/docs/Core_Topics/Mobile_SDK_for_iOS.html via _refresh/htmlmd.js — faithful mirror, not hand-curated
 ---
 
@@ -79,7 +79,7 @@ The Mobile SDK for iOS can communicate directly with Connect IQ-compatible devic
 
 This method launches GCM to the foreground and allows the user to choose which paired Connect IQ-compatible devices to share with the companion app. If GCM is not installed and a UI override delegate was set, its `needsToInstallConnectMobile` will be called.
 
-!!! Note Note that by launching GCM, this method causes the companion app to go into the background, possibly resulting in the app being suspended. **The companion app should expect to be suspended when calling this method.**
+Note that by launching GCM, this method causes the companion app to go into the background, possibly resulting in the app being suspended. **The companion app should expect to be suspended when calling this method.**
 
 Once the user has selected which of the paired devices to share with the companion app, GCM will launch the companion app (via its registered URL scheme), passing the list of devices as serialized URL query items. The companion app should override its app delegate’s `application:openURL:sourceApplication:annotation:` method to listen for this. The companion app may then call the `parseDeviceSelectionResponseFromURL:` method to extract the query items into an `NSArray` of `IQDevice` objects that it can use with the Mobile SDK.
 
@@ -107,7 +107,7 @@ Once the user has selected which of the paired devices to share with the compani
 
 Note that in this example, the parsed devices are stored to a dictionary for later use within the app, but are not cached in any kind of persistent storage.
 
-!!!Note To avoid needing to launch GCM excessively to discover devices, **companion apps should cache devices to persistent storage.** When a list of devices is returned by GCM, companion apps should clear all previously cached references to devices they may have known about. **Always use only the latest list of devices that the user has authorized.**
+**Note:** To avoid needing to launch GCM excessively to discover devices, **companion apps should cache devices to persistent storage.** When a list of devices is returned by GCM, companion apps should clear all previously cached references to devices they may have known about. **Always use only the latest list of devices that the user has authorized.**
 
 #### Listening for device events
 
@@ -120,7 +120,7 @@ Once the companion app has one or more `IQDevice` instances from GCM, it may reg
 
 The delegate passed in must be an instance of a class that conforms to the `IQDeviceEventDelegate` protocol. Once registered, the delegate’s `deviceStatusChanged:status:` method will be invoked when the device’s connection status changes. The `getDeviceStatus:` method may also be called to get the current connection status of the device. These methods both return a device’s status as an `IQDeviceStatus` value.
 
-!!! Note A companion app must register to receive device events before calling methods that operate on devices or apps, such as `getDeviceStatus:` or `sendMessage:toApp:progress:completion:`.
+**Note:** A companion app must register to receive device events before calling methods that operate on devices or apps, such as `getDeviceStatus:` or `sendMessage:toApp:progress:completion:`.
 
 To stop listening for device events, a companion app may call either the `unregisterForDeviceEvents:delegate:` or `unregisterForAllDeviceEvents:` method.
 
@@ -168,7 +168,7 @@ If a companion app determines that an app is out of date or not installed, it ma
 
 A companion app may also call this method even if the app is installed and up-to-date on the device, to allow the user to manage or uninstall the app from the device.
 
-!!! Note Like the `showConnectIQDeviceSelection` method, by launching GCM, this method causes the companion app to go into the background, possibly resulting in the app being suspended. **The companion app should expect to be suspended when calling this method.**
+**Note:** Like the `showConnectIQDeviceSelection` method, by launching GCM, this method causes the companion app to go into the background, possibly resulting in the app being suspended. **The companion app should expect to be suspended when calling this method.**
 
 #### Opening an app on the Garmin device
 
@@ -204,11 +204,11 @@ NSArray *message = @[@”hello pi”, @(3.14159)];
 }];
 ```
 
-!!! Note The message object that is passed to this method is first converted by the SDK into a Monkey C-compatible type, and is then sent to the app’s mailbox on the device. Therefore, **only Objective-C types that can be directly translated to comparable Monkey C types are valid.**
+**Note:** The message object that is passed to this method is first converted by the SDK into a Monkey C-compatible type, and is then sent to the app’s mailbox on the device. Therefore, **only Objective-C types that can be directly translated to comparable Monkey C types are valid.**
 
 Valid message types include `NSString`, `NSNumber`, `NSArray`, `NSDictionary`, and `NSNull`. Take advantage of nesting other types inside an `NSArray` or `NSDictionary` to form complex messages. Values contained in `NSNumber` objects will be converted to the most appropriate Monkey C value type on the device.
 
-!!! Note Keep in mind that the wearable devices have limited memory and processing power compared to an iOS device. **Messages should be as small as possible.** However, sending frequent small messages can incur performance and battery life costs. Therefore, it is more desirable to send occasional large messages than it is to frequently send many tiny messages. **Companion apps should aim to balance the costs of memory and performance by sending messages only when necessary and keeping message size to a minimum.**
+**Note:** Keep in mind that the wearable devices have limited memory and processing power compared to an iOS device. **Messages should be as small as possible.** However, sending frequent small messages can incur performance and battery life costs. Therefore, it is more desirable to send occasional large messages than it is to frequently send many tiny messages. **Companion apps should aim to balance the costs of memory and performance by sending messages only when necessary and keeping message size to a minimum.**
 
 #### Receiving messages
 
@@ -228,4 +228,4 @@ A companion app may register to receive messages that are sent from an app on a 
 }
 ```
 
-!!! Note A companion app may register to receive messages from multiple apps across many devices. However, **multiple companion apps should never register to receive messages from the same app**. The nature of Bluetooth communication on iOS prevents the Mobile SDK from determining which companion app to deliver the message to. Therefore, undefined behavior will result from multiple companion apps registering to receive messages from the same app.
+**Note:** A companion app may register to receive messages from multiple apps across many devices. However, **multiple companion apps should never register to receive messages from the same app**. The nature of Bluetooth communication on iOS prevents the Mobile SDK from determining which companion app to deliver the message to. Therefore, undefined behavior will result from multiple companion apps registering to receive messages from the same app.

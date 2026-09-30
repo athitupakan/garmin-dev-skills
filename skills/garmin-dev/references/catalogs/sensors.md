@@ -48,14 +48,23 @@ Tracked by firmware + visible in the Garmin Connect app, but **not exposed to th
 
 | Missing metric | Tier | Verification | Workaround |
 |----------------|------|--------------|------------|
-| HRV Status / Last Night | Body | Only `LANGUAGE_HRV` symbol (Croatian locale, unrelated) — no sensor symbol | Use **Body Battery** (Garmin computes from HRV + stress + sleep + activity) |
-| Training Load / Acute Load | Body | No symbol | Use **Stress** + **Recovery Time** as related signals |
-| Training Status | Body | No symbol | — |
-| Training Readiness | Body | No symbol | Use **Body Battery** as proxy |
-| Sleep Score | Body | Only `Background.getSleepEventRegistered` (event API, no score) | — |
-| Sleep Duration | Body | Same — only event registration, no duration | — |
+| HRV Status / Last Night | Body | Only `LANGUAGE_HRV` symbol (Croatian locale, unrelated) — no sensor symbol, no complication | Use **Body Battery** (Garmin computes from HRV + stress + sleep + activity) |
+| Training Load / Acute Load | Body | No symbol, no complication | Use **Stress** + **Recovery Time** as related signals |
+| Training Readiness | Body | No symbol, no complication | Use **Body Battery** as proxy |
+| Sleep Duration | Body | Only `Background.getSleepEventRegistered` (event API, no duration), no complication | — |
 
 Re-check on SDK upgrades; Garmin may expose these later.
+
+### Available only via Complications
+
+No direct sensor API, but a watch face can **subscribe** to the system complication ([complications](../connect-iq-docs/reference/api/complications.md)): add the `ComplicationSubscriber` permission, `Complications.registerComplicationChangeCallback(...)`, then `Complications.subscribeToUpdates(new Complications.Id(Complications.COMPLICATION_TYPE_...))`. Returns `false` on devices that don't publish that complication — always handle it. Full example: [core-topics/complications](../connect-iq-docs/portal/core-topics/complications.md).
+
+| Metric | Complication type | Since | Value |
+|--------|-------------------|-------|-------|
+| Training Status | `COMPLICATION_TYPE_TRAINING_STATUS` | API 4.2.0 | String |
+| Sleep Score | `COMPLICATION_TYPE_SLEEP_SCORE` | API 6.0.2 (SDK 9.2.0 docs) | 0–100 or `null` |
+
+Sourced from the SDK 9.2.0 docs, not verified on a device. Sleep Score needs a device on API 6.0.2+ — check `minApiLevel` / the device's API level in [device-reference](../connect-iq-docs/portal/device-reference/index.md).
 
 ## How to verify per device
 
@@ -99,7 +108,7 @@ Add the required permissions to **your** `manifest.xml` if you call any of the g
 4. **`birthYear` can be 0** — treat as "not set".
 5. **`SensorHistory.get<X>History()` returns an iterator (not null) on supported devices** — but `iterator.next()` returns null when no samples yet.
 6. **`HeartRateSample.heartRate` uses 255 (`INVALID_HR_SAMPLE`) as sentinel**, not null.
-7. **Background sleep API** detects when sleep starts / ends but does NOT give sleep score or duration.
+7. **Background sleep API** detects when sleep starts / ends but does NOT give sleep score or duration. Sleep score is only reachable via the `COMPLICATION_TYPE_SLEEP_SCORE` complication (API 6.0.2+).
 
 ## Appendix: example label mapping (vital-core)
 

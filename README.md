@@ -168,7 +168,7 @@ Nothing is hardcoded per machine. The skill works the same on every contributor'
 `references/catalogs/sensors.md` adds two things you can't get from Garmin docs:
 
 - **Wearer-priority tier grouping** — what to surface on a watch face, organized by what matters to the person wearing it (Body → Activity → Device)
-- **Walled garden list** — metrics Garmin tracks but **does not** expose to Connect IQ (HRV Status, Training Load, Sleep Score, etc.) with workarounds where they exist
+- **Walled garden list** — metrics Garmin tracks but **does not** expose to Connect IQ (HRV Status, Training Load, Sleep Duration, etc.) with workarounds where they exist, plus metrics reachable only via Complications (Sleep Score, Training Status)
 
 ## License
 

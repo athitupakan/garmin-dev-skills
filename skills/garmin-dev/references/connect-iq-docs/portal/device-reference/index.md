@@ -1,10 +1,10 @@
 # Device Reference (§16)
 
-Per-device spec pages converted from the SDK's `doc/docs/Device_Reference/` (163 devices). Part of the 📄 **portal** bucket; auto-converted mirrors (see the `generated:` frontmatter).
+Per-device spec pages converted from the SDK's `doc/docs/Device_Reference/` (164 devices). Part of the 📄 **portal** bucket; auto-converted mirrors (see the `generated:` frontmatter).
 
 Each page lists **screen shape/size, colors, buttons, launcher icon size, and per-app-type memory limits + supported field layouts** — useful when picking target devices and budgeting memory.
 
-**Cached against SDK:** 9.1.0 · batch 2026-05-30
+**Cached against SDK:** 9.2.0 · batch 2026-10-01
 
 > Tip: the simulator's **Settings → Device** shows the same specs live for whichever device you're running.
 
@@ -18,7 +18,7 @@ Each page lists **screen shape/size, colors, buttons, launcher icon size, and pe
 
 ## D2
 
-[D2™ Air](d2air.md) · [D2™ Air X10](d2airx10.md) · [D2™ Bravo Titanium](d2bravo-titanium.md) · [D2™ Bravo](d2bravo.md) · [D2™ Charlie](d2charlie.md) · [D2™ Delta](d2delta.md) · [D2™ Delta PX](d2deltapx.md) · [D2™ Delta S](d2deltas.md) · [D2™ Mach 1](d2mach1.md) · [D2™ Mach 2](d2mach2.md)
+[D2™ Air](d2air.md) · [D2™ Air X10](d2airx10.md) · [D2™ Bravo Titanium](d2bravo-titanium.md) · [D2™ Bravo](d2bravo.md) · [D2™ Charlie](d2charlie.md) · [D2™ Delta](d2delta.md) · [D2™ Delta PX](d2deltapx.md) · [D2™ Delta S](d2deltas.md) · [D2™ Mach 1](d2mach1.md) · [D2™ Mach 2](d2mach2.md) · [D2™ Mach 2 Pro](d2mach2pro.md)
 
 ## Descent
 

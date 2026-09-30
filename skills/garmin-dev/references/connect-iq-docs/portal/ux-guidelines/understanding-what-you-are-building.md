@@ -1,7 +1,7 @@
 ---
 source: https://developer.garmin.com/connect-iq/user-experience-guidelines/understanding-what-you-are-building/
-sdk: 9.1.0
-fetched: 2026-05-30
+sdk: 9.2.0
+fetched: 2026-09-30
 generated: auto-converted from SDK doc/docs/User_Experience_Guidelines/Understanding_What_You_Are_Building.html via _refresh/htmlmd.js — faithful mirror, not hand-curated
 ---
 

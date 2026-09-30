@@ -1,7 +1,7 @@
 ---
 source: https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi.html
-sdk: 9.1.0
-fetched: 2026-05-30
+sdk: 9.2.0
+fetched: 2026-09-30
 generated: auto-converted from SDK doc/Toybox/WatchUi.html via _refresh/htmlmd.js — faithful mirror, not hand-curated
 ---
 
@@ -395,7 +395,7 @@ Configurate touch event settings, only allowed for Watch Apps and Audio Content 
 **Parameters:**
 - options — (Lang.Dictionary) — Dictionary of touch event settings. :enabled — (Lang.Boolean) — Master flag to enable or disable touch events while application is running in the foreground.
 
-_Supported on 39 devices._
+_Supported on 40 devices._
 
 **Returns:**
 - Lang.Boolean — True if the operation was successful, false otherwise.
@@ -430,7 +430,7 @@ _Supported on 7 devices._
 
 Returns the current touch event settings.
 
-_Supported on 39 devices._
+_Supported on 40 devices._
 
 **Returns:**
 - Lang.Dictionary — Current touch event settings.
@@ -473,7 +473,7 @@ Initiate a request to ask for this app to be reviewed
 **Parameters:**
 - callback — (Lang.Method) — Callback to invoke when the review token request has completed.
 
-_Supported on 75 devices._
+_Supported on 76 devices._
 
 **Since:** API Level 3.4.2
 
@@ -526,7 +526,7 @@ An action menu will dismiss it self on either user selecting a menu item or pres
 - menu — (WatchUi.ActionMenu) — An action menu object.
 - delegate — (WatchUi.ActionMenuDelegate) — An action menu delegate object.
 
-_Supported on 87 devices._
+_Supported on 88 devices._
 
 **Since:** API Level 3.4.0
 
@@ -538,7 +538,7 @@ Push a toast notification to the display
 - text — (Lang.String, Lang.ResourceId) — The text to display in the notification toast.
 - options — (Lang.Dictionary) — A Dictionary of options. :icon — (Graphics.BitmapReference, WatchUi.BitmapResource, Lang.ResourceId) — The icon to display with this notification. If no icon is provided and the system requires an icon for a toast, the app icon will be used.
 
-_Supported on 95 devices._
+_Supported on 96 devices._
 
 **Since:** API Level 3.4.0
 
@@ -549,7 +549,7 @@ Start the app review UI flow
 **Parameters:**
 - token — (WatchUi.ReviewResponseToken) — The token that was passed as a parameter to a successful call to the callback parameter in makeReviewTokenRequest.
 
-_Supported on 75 devices._
+_Supported on 76 devices._
 
 **Since:** API Level 3.4.2
 

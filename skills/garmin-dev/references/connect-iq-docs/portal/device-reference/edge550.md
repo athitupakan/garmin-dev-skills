@@ -1,7 +1,7 @@
 ---
 source: https://developer.garmin.com/connect-iq/device-reference/edge550/
-sdk: 9.1.0
-fetched: 2026-05-30
+sdk: 9.2.0
+fetched: 2026-09-30
 generated: auto-converted from SDK doc/docs/Device_Reference/edge550.html via _refresh/htmlmd.js — faithful mirror, not hand-curated
 ---
 
@@ -27,19 +27,19 @@ generated: auto-converted from SDK doc/docs/Device_Reference/edge550.html via _r
 | Watch App | 1048576 |  |
 | Widget | 1048576 | Requires 4.x SDK |
 
-**1 Fields A Layout**
+**1 Field A Layout**
 
 | Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Field 1 | 0 | 0 | 420 | 600 | 0 | False | False | False | False |
 
-**1 Fields B Layout**
+**1 Field B Layout**
 
 | Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Field 1 | 0 | 482 | 420 | 118 | 0 | False | False | False | False |
 
-**1 Fields C Layout**
+**1 Field C Layout**
 
 | Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

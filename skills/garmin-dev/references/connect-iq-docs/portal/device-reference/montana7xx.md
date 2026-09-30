@@ -1,7 +1,7 @@
 ---
 source: https://developer.garmin.com/connect-iq/device-reference/montana7xx/
-sdk: 9.1.0
-fetched: 2026-05-30
+sdk: 9.2.0
+fetched: 2026-09-30
 generated: auto-converted from SDK doc/docs/Device_Reference/montana7xx.html via _refresh/htmlmd.js — faithful mirror, not hand-curated
 ---
 
@@ -26,7 +26,7 @@ generated: auto-converted from SDK doc/docs/Device_Reference/montana7xx.html via
 | Watch App | 2359296 |  |
 | Widget | 1048576 |  |
 
-**1 Fields Layout**
+**1 Field Layout**
 
 | Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -89,7 +89,7 @@ generated: auto-converted from SDK doc/docs/Device_Reference/montana7xx.html via
 | Field 11 | 1 | 608 | 238 | 113 | 0 | False | False | False | False |
 | Field 12 | 241 | 608 | 238 | 113 | 0 | False | False | False | False |
 
-**1 Fields Layout**
+**1 Field Layout**
 
 | Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

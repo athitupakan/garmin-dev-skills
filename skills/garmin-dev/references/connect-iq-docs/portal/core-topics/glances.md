@@ -1,7 +1,7 @@
 ---
 source: https://developer.garmin.com/connect-iq/core-topics/glances/
-sdk: 9.1.0
-fetched: 2026-05-30
+sdk: 9.2.0
+fetched: 2026-09-30
 generated: auto-converted from SDK doc/docs/Core_Topics/Glances.html via _refresh/htmlmd.js — faithful mirror, not hand-curated
 ---
 
@@ -42,7 +42,7 @@ Depending on a device's resource limitations, WatchUi.GlanceView can be updated 
 
 Devices that have ample resources 1 will start the Widget in Glance mode, and keep it alive. The provided WatchUi.GlanceView will be updated as needed by the system, and calls to WatchUi.requestUpdate() will trigger a WatchUi.View update as expected.
 
-Note: It's highly recommended that the update rate should be kept under 1HZ to provide a better scrolling experience.
+**Note:** It's highly recommended that the update rate should be kept under 1HZ to provide a better scrolling experience.
 
 ### Background UI Update
 

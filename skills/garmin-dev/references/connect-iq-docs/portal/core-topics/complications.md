@@ -1,7 +1,7 @@
 ---
 source: https://developer.garmin.com/connect-iq/core-topics/complications/
-sdk: 9.1.0
-fetched: 2026-05-30
+sdk: 9.2.0
+fetched: 2026-09-30
 generated: auto-converted from SDK doc/docs/Core_Topics/Complications.html via _refresh/htmlmd.js — faithful mirror, not hand-curated
 ---
 
@@ -56,7 +56,7 @@ Units should be expected to be published as the following:
 
 ## Subscribing to Complications
 
-To subscribe to a complication you need to add the `ComplicationSubscriber` permission to your manifest file. Subscribing to Complications requires the . You can use Complications.getComplications() to query the all complications supported by the system. You can also query a native complication directly by constructing a explicitly:
+To subscribe to a complication you need to add the `ComplicationSubscriber` permission to your manifest file. Subscribing to Complications requires the Complications.Id. You can use Complications.getComplications() to query the all complications supported by the system. You can also query a native complication directly by constructing a Complications.Id explicitly:
 
 ```
 var complication = Complications.getComplication(

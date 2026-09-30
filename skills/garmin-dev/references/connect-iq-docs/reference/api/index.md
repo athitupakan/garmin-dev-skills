@@ -3,7 +3,7 @@
 Local cache of Garmin Connect IQ Toybox API docs we've actually used or expect to use soon.
 
 **Source:** SDK install `doc/Toybox/<Module>.html` (canonical web mirror: <https://developer.garmin.com/connect-iq/api-docs/>)
-**Cached against SDK:** 9.1.0
+**Cached against SDK:** 9.2.0
 **Last refresh:** curated 2026-05-24 · mirror batch 2026-05-30
 
 **Bucket index:** [../index.md](../index.md) (sdk/api) · **Full portal sitemap:** [../../index.md](../../index.md)

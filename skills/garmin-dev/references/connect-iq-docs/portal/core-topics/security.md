@@ -1,7 +1,7 @@
 ---
 source: https://developer.garmin.com/connect-iq/core-topics/security/
-sdk: 9.1.0
-fetched: 2026-05-30
+sdk: 9.2.0
+fetched: 2026-09-30
 generated: auto-converted from SDK doc/docs/Core_Topics/Security.html via _refresh/htmlmd.js — faithful mirror, not hand-curated
 ---
 
@@ -21,7 +21,7 @@ These levels of trust are enforced using digital signatures. Key management has 
 
 The Connect IQ compiler requires a developer key be provided to for signing when compiling and packaging apps. The required key must be a RSA 4096 bit private key.
 
-**Note**: It's important you keep track of the key you use to sign app packages. You will need to use the same key to sign updates to an existing app on the store. If you lose your original signing key you will not be able to update your app.
+**Note:** It's important you keep track of the key you use to sign app packages. You will need to use the same key to sign updates to an existing app on the store. If you lose your original signing key you will not be able to update your app.
 
 ## Generating a Key Using Visual Studio Code
 

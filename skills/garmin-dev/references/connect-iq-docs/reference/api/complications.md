@@ -1,7 +1,7 @@
 ---
 source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications.html
-sdk: 9.1.0
-fetched: 2026-05-30
+sdk: 9.2.0
+fetched: 2026-09-30
 generated: auto-converted from SDK doc/Toybox/Complications.html via _refresh/htmlmd.js — faithful mirror, not hand-curated
 ---
 
@@ -13,7 +13,7 @@ The Complications module allows apps to both subscribe to and publish complicati
 
 **Since:** API Level 4.2.0
 
-_Supported on 62 devices._
+_Supported on 63 devices._
 
 ## Classes Under Namespace
 
@@ -87,6 +87,7 @@ System build-in complication type
 | COMPLICATION_TYPE_HIGH_LOW_TEMPERATURE | 39 | API Level 4.2.0 | Value is a String providing the high and low temperature values in a format similar to "H <high> / L <low>" |
 | COMPLICATION_TYPE_WHEELCHAIR_PUSHES | 40 | API Level 4.2.3 | Value is a non-negative Number of pushes for the current day, only available in wheelchair mode |
 | COMPLICATION_TYPE_LAST_GOLF_ROUND_SCORE | 41 | API Level 5.0.0 | Value is a String in the format "<LastRoundTotalScore>(<Offset>)" where Offset is "E" for even-par, a negative value for under par, or a positive value for over par |
+| COMPLICATION_TYPE_SLEEP_SCORE | 42 | API Level 6.0.2 | Value is a non-negative number from 0 to 100 representing sleep score or `null` |
 
 ## Typedef Summary
 - **ComplicationChangedCallback** as Lang.Method(id as Complications.Id) as **Void** Callback for subscribers to be notified of complication updates.
@@ -148,7 +149,7 @@ Launches the app associated with the complication
 **Parameters:**
 - id — (Complications.Id) — The complication Id to launch
 
-_Supported on 58 devices._
+_Supported on 59 devices._
 
 **See Also:**
 

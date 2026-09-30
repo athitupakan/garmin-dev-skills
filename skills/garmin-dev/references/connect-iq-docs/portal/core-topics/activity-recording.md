@@ -1,7 +1,7 @@
 ---
 source: https://developer.garmin.com/connect-iq/core-topics/activity-recording/
-sdk: 9.1.0
-fetched: 2026-05-30
+sdk: 9.2.0
+fetched: 2026-09-30
 generated: auto-converted from SDK doc/docs/Core_Topics/Activity_Recording.html via _refresh/htmlmd.js — faithful mirror, not hand-curated
 ---
 
@@ -38,7 +38,7 @@ In addition to being able to play back existing FIT files, the simulator can als
 | Discard Activity | Discard | N/A | Discards the current recording and deletes the corresponding .fit file. Note this is only enabled if activity recording has been started and subsequently stopped. |
 | Save Activity | Save | N/A | Saves the recorded activity into a .fit file and resets the timer state. Note this is only enabled if activity recording has been started and subsequently stopped. |
 
-Note: the device simulator will not automatically start activity recording when a data field is being run. You must explicitly start and stop activity recording as described here.
+**Note:** the device simulator will not automatically start activity recording when a data field is being run. You must explicitly start and stop activity recording as described here.
 
 ## FIT Developer Fields
 

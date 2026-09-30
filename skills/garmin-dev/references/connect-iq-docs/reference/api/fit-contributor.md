@@ -1,7 +1,7 @@
 ---
 source: https://developer.garmin.com/connect-iq/api-docs/Toybox/FitContributor.html
-sdk: 9.1.0
-fetched: 2026-05-30
+sdk: 9.2.0
+fetched: 2026-09-30
 generated: auto-converted from SDK doc/Toybox/FitContributor.html via _refresh/htmlmd.js — faithful mirror, not hand-curated
 ---
 
@@ -74,7 +74,7 @@ class BananasEarnedView extends WatchUi.SimpleDataField
 - Glance
 - Watch App
 
-_Supported on 160 devices._
+_Supported on 161 devices._
 
 **Requires Permission:**
 

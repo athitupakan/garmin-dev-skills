@@ -1,7 +1,7 @@
 ---
 source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Communications.html
-sdk: 9.1.0
-fetched: 2026-05-30
+sdk: 9.2.0
+fetched: 2026-09-30
 generated: auto-converted from SDK doc/Toybox/Communications.html via _refresh/htmlmd.js — faithful mirror, not hand-curated
 ---
 
@@ -28,7 +28,7 @@ This module was made available to foreground data fields with API 5.0.0
 - Watch App
 - Widget
 
-_Supported on 163 devices._
+_Supported on 164 devices._
 
 **Requires Permission:**
 
@@ -262,7 +262,7 @@ This method may be removed after System 4.
 
 Clear the contents of the mailbox.
 
-_Supported on 139 devices._
+_Supported on 140 devices._
 
 **See Also:**
 
@@ -358,7 +358,7 @@ This method may be removed after System 4.
 
 Get the MailboxIterator for this Application's mailbox.
 
-_Supported on 139 devices._
+_Supported on 140 devices._
 
 **Returns:**
 - Communications.MailboxIterator — Iterator for the mailbox
@@ -511,7 +511,7 @@ A reference to a callback method which must accept two arguments:
 - responseCode: the server response code
 - data: the content if the request was successful, or `null`
 
-_Supported on 163 devices._
+_Supported on 164 devices._
 
 **See Also:**
 
@@ -762,7 +762,7 @@ Send a system notification to indicate that the sync completed.
 **Parameters:**
 - errorMessage — (Lang.String) — A descriptive error message if a failure occurred. If the sync completes successfully, `null` should be passed to this method.
 
-_Supported on 102 devices._
+_Supported on 103 devices._
 
 **Since:** API Level 3.1.0
 
@@ -773,7 +773,7 @@ Send a system notification to indicate overall sync progress.
 **Parameters:**
 - percentageComplete — (Lang.Number) — An integer from 0 to 100 indicating the completion percentage.
 
-_Supported on 102 devices._
+_Supported on 103 devices._
 
 **Since:** API Level 3.1.0
 
@@ -852,6 +852,8 @@ if (Communications has :registerForPhoneAppMessageErrors) {
 }
 ```
 
+_Supported on 22 devices._
+
 **See Also:**
 
 - Communications.registerForPhoneAppMessages()
@@ -879,7 +881,7 @@ function phoneMessageCallback(msg as PhoneAppMessage) as Void {
 Communications.registerForPhoneAppMessages(method(:phoneMessageCallback));
 ```
 
-_Supported on 151 devices._
+_Supported on 152 devices._
 
 **See Also:**
 
@@ -901,7 +903,7 @@ The listener method is called whenever a new message is received.
 **Parameters:**
 - listener — (Lang.Method) — A reference to a callback method which must accept an iterator. The iterator is the mailbox iterator for the app
 
-_Supported on 139 devices._
+_Supported on 140 devices._
 
 **See Also:**
 
@@ -913,7 +915,7 @@ _Supported on 139 devices._
 
 Exit the AppBase and launch it in sync mode.
 
-_Supported on 102 devices._
+_Supported on 103 devices._
 
 **Since:** API Level 3.1.0
 
@@ -924,7 +926,7 @@ Exit the AppBase and launch it in sync mode with the provided message.
 **Parameters:**
 - options — (Lang.Dictionary) — a dictionary of options, can be null :message — (Lang.Number) — the sync message to display
 
-_Supported on 61 devices._
+_Supported on 62 devices._
 
 **Since:** API Level 4.0.4
 
@@ -941,6 +943,6 @@ Support for transmittable types has been expanded over time.
 - options — (Lang.Dictionary) — Additional transmit options for future proofing. For now, an empty Dictionary is used.
 - listener — (Communications.ConnectionListener) — An extension of the ConnectionListener class
 
-_Supported on 152 devices._
+_Supported on 153 devices._
 
 **Since:** API Level 1.0.0

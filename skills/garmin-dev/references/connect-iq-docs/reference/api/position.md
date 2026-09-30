@@ -1,7 +1,7 @@
 ---
 source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Position.html
-sdk: 9.1.0
-fetched: 2026-05-30
+sdk: 9.2.0
+fetched: 2026-09-30
 generated: auto-converted from SDK doc/Toybox/Position.html via _refresh/htmlmd.js — faithful mirror, not hand-curated
 ---
 
@@ -181,14 +181,14 @@ if (Position has :POSITIONING_MODE_AVIATION) {
 }
 
 if (Position has :hasConfigurationSupport) {
-    if (Position has :CONFIGURATION_GPS_GLONASS_GALILEO_BEIDOU_L1_L5) &&
-       (Position.hasConfigurationSupport(Position.CONFIGURATION_GPS_GLONASS_GALILEO_BEIDOU_L1_L5)) {
+    if ((Position has :CONFIGURATION_GPS_GLONASS_GALILEO_BEIDOU_L1_L5) &&
+       Position.hasConfigurationSupport(Position.CONFIGURATION_GPS_GLONASS_GALILEO_BEIDOU_L1_L5)) {
         options[:configuration] = Position.CONFIGURATION_GPS_GLONASS_GALILEO_BEIDOU_L1_L5;
-    } else if (Position has :CONFIGURATION_GPS_GLONASS_GALILEO_BEIDOU_L1) &&
-       (Position.hasConfigurationSupport(Position.CONFIGURATION_GPS_GLONASS_GALILEO_BEIDOU_L1)) {
+    } else if ((Position has :CONFIGURATION_GPS_GLONASS_GALILEO_BEIDOU_L1) &&
+       Position.hasConfigurationSupport(Position.CONFIGURATION_GPS_GLONASS_GALILEO_BEIDOU_L1)) {
         options[:configuration] = Position.CONFIGURATION_GPS_GLONASS_GALILEO_BEIDOU_L1;
-    } else if (Position has :CONFIGURATION_GPS) &&
-       (Position.hasConfigurationSupport(Position.CONFIGURATION_GPS)) {
+    } else if ((Position has :CONFIGURATION_GPS) &&
+       Position.hasConfigurationSupport(Position.CONFIGURATION_GPS)) {
         options[:configuration] = Position.CONFIGURATION_GPS;
     }
 } else if (Position has :CONSTELLATION_GLONASS) {
@@ -206,7 +206,7 @@ function onPosition(info) {
 }
 ```
 
-_Supported on 162 devices._
+_Supported on 163 devices._
 
 **Since:** API Level 1.0.0
 
@@ -237,7 +237,7 @@ function timerCallback() {
 }
 ```
 
-_Supported on 162 devices._
+_Supported on 163 devices._
 
 **Returns:**
 - Position.Info
@@ -251,7 +251,7 @@ Determines if the device supports a requested GPS configuration
 **Parameters:**
 - config — (Position.Configuration) — A CONFIGURATION_* enum value specifying what configuration to enable. Only available with ConnectIQ 3.3.6 and later.
 
-_Supported on 111 devices._
+_Supported on 112 devices._
 
 **Since:** API Level 3.3.6
 
@@ -428,7 +428,7 @@ Position Info can be retrieved on every call of onUpdate() or it can be obtained
 
 **Since:** API Level 1.0.0
 
-_Supported on 162 devices._
+_Supported on 163 devices._
 
 ## Instance Member Summary
 - **accuracy** as Position.Quality The positional accuracy.
