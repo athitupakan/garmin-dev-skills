@@ -7,7 +7,7 @@ What's where, and when to open it.
 | Folder | Owner | When to open |
 |---|---|---|
 | [connect-iq-docs/](connect-iq-docs/) | **Garmin** (mirror) | Verify what the platform actually supports. Split into [reference/](connect-iq-docs/reference/) (sdk/api — version-pinned API + language) and [portal/](connect-iq-docs/portal/) (program/policy/concept docs) |
-| [commands/](commands/) | us | "What does user mean by `build` / `run` / `push` / `watch` / `release` / `package`?" — dispatch contract |
+| [commands/](commands/) | us | "What does user mean by `build` / `run` / `push` / `watch` / `release` / `package` / `stop`?" — dispatch contract |
 | [guides/](guides/) | us | Task workflows — configurable settings, custom fonts, simulator data injection |
 | [catalogs/](catalogs/) | us | Lookup tables — sensor catalog (which API → which metric) |
 | [troubleshooting.md](troubleshooting.md) | us | Something broke — known errors + fixes |

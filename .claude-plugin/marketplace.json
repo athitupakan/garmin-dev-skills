@@ -1,0 +1,17 @@
+{
+  "name": "garmin-dev-skills",
+  "description": "Claude Code skills for Garmin Connect IQ development.",
+  "owner": {
+    "name": "Athit",
+    "url": "https://github.com/athitupakan"
+  },
+  "plugins": [
+    {
+      "name": "garmin-dev",
+      "source": "./",
+      "description": "Build, run, package, and ship Garmin Connect IQ apps on Windows, macOS, or Linux, grounded in a cached mirror of Garmin's docs.",
+      "category": "development",
+      "tags": ["garmin", "connect-iq", "monkey-c"]
+    }
+  ]
+}

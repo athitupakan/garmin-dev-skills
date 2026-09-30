@@ -19,7 +19,7 @@ The script is idempotent — re-running mid-session just skips the simulator lau
 ## What it does
 
 1. Ensures `bin\` exists
-2. Launches simulator if not already running (2-sec boot buffer)
+2. Launches simulator if not already running (Windows: 2-sec boot buffer; POSIX: via `bin/connectiq`, waits up to 30s for the `simulator` process, then 3s more)
 3. Compiles → `bin\<project>.prg`
 4. Pushes via `monkeydo` — **blocks** while streaming device logs
 

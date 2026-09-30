@@ -14,7 +14,9 @@ Users install it as a plugin (`--plugin-dir` / marketplace) or copy `skills/garm
 their project's `.claude/skills/`. Either way the skill loads via `SKILL.md`'s `description`.
 
 - Repo: <https://github.com/athitupakan/garmin-dev-skills>  ·  Plugin/skill name: `garmin-dev` (intentionally different from the repo name)
-- Everything skill-related lives under `skills/` (single-skill layout — no category folder). Root holds only `.claude-plugin/plugin.json`, `README.md`, `LICENSE`, `.gitignore`, `.gitattributes`, and this file.
+- Everything skill-related lives under `skills/` (single-skill layout — no category folder). Root holds only `.claude-plugin/{plugin,marketplace}.json`, `README.md`, `LICENSE`, `.gitignore`, `.gitattributes`, and this file.
+- The repo is its own marketplace (`marketplace.json`, plugin `source: "./"`). Users update via `/plugin marketplace update`, which only sees a new release when `version` in `plugin.json` changes — **bump it on every user-facing change**.
+- Validate before committing: `claude plugin validate .` (the CLAUDE.md-not-loaded warning is expected).
 
 ## Layout
 

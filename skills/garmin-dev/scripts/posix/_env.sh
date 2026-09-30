@@ -62,7 +62,7 @@ find_jdk() {
 
 if ! jdk="$(find_jdk)"; then
   echo "JDK 17 not found. Install:" >&2
-  echo "  macOS: brew install openjdk@17  (then follow brew's symlink instructions)" >&2
+  echo "  macOS: brew install --cask temurin@17" >&2
   echo "  Linux: sudo apt install openjdk-17-jdk  (or your distro equivalent)" >&2
   echo "Or set JAVA_HOME to an existing JDK 17 install." >&2
   exit 1
@@ -75,8 +75,15 @@ case "$os_id" in
   mac) sdk_root="$HOME/Library/Application Support/Garmin/ConnectIQ/Sdks" ;;
   lin) sdk_root="$HOME/.Garmin/ConnectIQ/Sdks" ;;
 esac
-# Pick newest matching SDK (lexicographic sort works because Garmin includes ISO date in dir name)
-Sdk="$(ls -d "$sdk_root"/connectiq-sdk-${os_id}-* 2>/dev/null | sort -r | head -1 || true)"
+# Pick newest SDK by the ISO date in the dir name (connectiq-sdk-mac-9.1.0-2026-05-01-<hash>).
+# Sorting the whole name would rank 9.x above 10.x.
+Sdk=""
+newest=""
+for d in "$sdk_root"/connectiq-sdk-${os_id}-*; do
+  [ -d "$d" ] || continue
+  stamp="$(basename "$d" | cut -d- -f5-7)"
+  if [ -z "$Sdk" ] || [[ "$stamp" > "$newest" ]]; then Sdk="$d"; newest="$stamp"; fi
+done
 if [ -z "$Sdk" ]; then
   echo "Connect IQ SDK not found under $sdk_root" >&2
   echo "Install via SDK Manager: https://developer.garmin.com/connect-iq/sdk/" >&2

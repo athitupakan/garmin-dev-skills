@@ -27,7 +27,7 @@ If `_env` throws on load with the "JDK 17 not found" message, install or expose 
 | OS | Recommended install |
 |----|---------------------|
 | Windows | Microsoft OpenJDK 17 — <https://learn.microsoft.com/java/openjdk/download>. Installer puts it at `C:\Program Files\Microsoft\jdk-17.*` where `_env.ps1` will find it automatically. |
-| macOS | `brew install openjdk@17` — follow brew's symlink instructions so it lands in `/Library/Java/JavaVirtualMachines/`. |
+| macOS | `brew install --cask temurin@17` (lands in `/Library/Java/JavaVirtualMachines/`). `brew install openjdk@17` also works — `_env.sh` checks the Homebrew prefix directly, no symlink needed. |
 | Linux | `sudo apt install openjdk-17-jdk` (Debian/Ubuntu) or your distro's equivalent. |
 
 **Manual override (any OS):** set `JAVA_HOME` to a valid JDK 17 root before running any script. `_env` uses it if set + valid.

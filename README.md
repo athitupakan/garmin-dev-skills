@@ -26,20 +26,78 @@ You don't run anything directly. Claude does. Your workflow stays:
 | **Garmin project** | Standard layout — `manifest.xml`, `monkey.jungle`, `source/`, `resources/` at the project root. |
 | **Claude Code** | <https://docs.claude.com/en/docs/claude-code> |
 
+## macOS setup
+
+Step by step from a fresh Mac (Apple Silicon or Intel). Run the commands in Terminal.
+
+**1. Homebrew** — skip if `brew --version` already works.
+
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+**2. JDK 17** — the Connect IQ SDK needs exactly 17, not 21+.
+
+```
+brew install --cask temurin@17
+/usr/libexec/java_home -v 17     # should print /Library/Java/JavaVirtualMachines/temurin-17.jdk/...
+```
+
+The installer asks for your Mac password (it runs a `.pkg` with `sudo`), so run it in your own terminal — or in Claude Code as `! brew install --cask temurin@17`. No `JAVA_HOME` needed — the scripts find it. (`brew install openjdk@17` also works.) If `JAVA_HOME` is already set to another version, the scripts skip it and keep searching.
+
+**3. Connect IQ SDK**
+
+1. Download the SDK Manager from <https://developer.garmin.com/connect-iq/sdk/> (*Accept & Download*).
+2. Open the `.dmg` and copy the SDK Manager into a folder (e.g. `~/Applications`), then launch it.
+3. Log in with your Garmin Connect account.
+4. **SDK** tab → download the latest SDK.
+5. **Devices** tab → download every device listed in your `manifest.xml` (builds fail for devices that aren't downloaded).
+
+The SDK lands in `~/Library/Application Support/Garmin/ConnectIQ/Sdks/` — the scripts pick the newest one.
+
+**4. Developer key** — one per developer, reused across projects. From your project root:
+
+```
+openssl genrsa -out developer_key.pem 4096
+openssl pkcs8 -topk8 -inform PEM -outform DER -in developer_key.pem -out developer_key -nocrypt
+printf 'developer_key\ndeveloper_key.pem\n' >> .gitignore
+```
+
+Keep a backup of this key outside the project — the store only accepts updates signed with the same key.
+
+**5. Claude Code + this plugin**
+
+```
+brew install --cask claude-code
+cd path/to/your-garmin-project
+claude
+```
+
+Then inside Claude Code: `/plugin marketplace add athitupakan/garmin-dev-skills` and `/plugin install garmin-dev@garmin-dev-skills`.
+
+**6. Check it works** — ask Claude *"build the watch face"*. A successful build writes `bin/<project>.prg`. Then *"run it in the simulator"*.
+
 ## Install
 
 This repo is a Claude Code **plugin** — the `SKILL.md` lives at `skills/garmin-dev/SKILL.md` per the [Anthropic plugin spec](https://code.claude.com/docs/en/plugins). Two install modes:
 
-### Option 1 — Plugin (recommended)
+### Option 1 — Plugin via marketplace (recommended)
 
-Clone the repo anywhere, then point Claude Code at it:
+This repo is also its own marketplace. Inside Claude Code:
+
+```
+/plugin marketplace add athitupakan/garmin-dev-skills
+/plugin install garmin-dev@garmin-dev-skills
+```
+
+Persistent across sessions. Update later with `/plugin marketplace update garmin-dev-skills`.
+
+To try it for one session without installing, clone and pass `--plugin-dir`:
 
 ```
 git clone https://github.com/athitupakan/garmin-dev-skills
 claude --plugin-dir ./garmin-dev-skills
 ```
-
-The skill loads under the namespace `garmin-dev`. Session-scoped — re-pass `--plugin-dir` next session, or pin it to a marketplace for persistent install.
 
 ### Option 2 — Standalone skill (copy into your project)
 
@@ -60,7 +118,7 @@ Then in Claude Code: *"build the watch face."* Claude detects your OS, dispatche
 | OS | Script set | Status |
 |----|-----------|--------|
 | Windows 10 / 11 | `scripts/windows/*.ps1` (PowerShell 5.1+) | ✓ developed against |
-| macOS (Intel + Apple Silicon) | `scripts/posix/*.sh` (Bash) | scripts written but not yet community-tested |
+| macOS (Intel + Apple Silicon) | `scripts/posix/*.sh` (Bash) | ✓ tested on Apple Silicon (macOS 26, SDK 9.2.0, Temurin 17); Intel untested |
 | Linux (Ubuntu LTS officially supported by Garmin) | `scripts/posix/*.sh` (Bash) | scripts written but not yet community-tested |
 
 If a script misbehaves on Mac or Linux, please open an issue with the failing command + error output.
@@ -70,6 +128,7 @@ If a script misbehaves on Mac or Linux, please open an issue with the failing co
 ```
 .claude-plugin/
   plugin.json             plugin manifest (name, version, author, license)
+  marketplace.json        makes this repo installable via /plugin marketplace add
 LICENSE
 README.md                 this file
 skills/

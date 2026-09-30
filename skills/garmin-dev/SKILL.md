@@ -33,9 +33,10 @@ scripts/
     watch.ps1                auto-rebuild on save
     release.ps1              release-stripped build for one device
     package.ps1              .iq package for all manifest products
+    stop.ps1                 close simulator + monkeydo (no _env, no project needed)
   posix/                     Bash — macOS + Linux
     _env.sh                  shared: OS-aware paths, JDK chain, manifest parse
-    build.sh, push.sh, run.sh, watch.sh, release.sh, package.sh
+    build.sh, push.sh, run.sh, watch.sh, release.sh, package.sh, stop.sh
 
 references/                  all docs the skill consults
   index.md                   map: what's where, when to open it
@@ -59,6 +60,7 @@ references/                  all docs the skill consults
 | Auto-rebuild on save | `scripts\windows\watch.ps1` | `scripts/posix/watch.sh` | [commands/watch.md](references/commands/watch.md) |
 | Test release build in sim | `scripts\windows\release.ps1` | `scripts/posix/release.sh` | [commands/release.md](references/commands/release.md) |
 | Build store-ready `.iq` | `scripts\windows\package.ps1` | `scripts/posix/package.sh` | [commands/package.md](references/commands/package.md) |
+| Close / quit the simulator | `scripts\windows\stop.ps1` | `scripts/posix/stop.sh` | [commands/stop.md](references/commands/stop.md) |
 | Publish / submit to store / "will it pass app review?" | — | — | [connect-iq-docs/portal/submit-an-app.md](references/connect-iq-docs/portal/submit-an-app.md) + [app-review-guidelines.md](references/connect-iq-docs/portal/app-review-guidelines.md) |
 | Connect IQ developer docs (API / language / store policy) | — | — | [connect-iq-docs/index.md](references/connect-iq-docs/index.md) |
 | Add a custom .fnt font | — | — | [guides/custom-fonts.md](references/guides/custom-fonts.md) |
@@ -76,7 +78,7 @@ Either way, run the script from the user's **project root** (where `manifest.xml
 
 ## Claude Code invocation
 
-- `build.ps1` / `build.sh` and `release.ps1` / `release.sh` exit when compile finishes — run foreground.
+- `build.ps1` / `build.sh` and `release.ps1` / `release.sh` exit when compile finishes — run foreground. `stop.ps1` / `stop.sh` also run foreground.
 - `run.ps1` / `run.sh`, `push.ps1` / `push.sh`, `watch.ps1` / `watch.sh` are **long-lived** (block on `monkeydo` log stream). Pass `run_in_background: true` in the PowerShell / Bash tool call; do not wait for exit.
 
 ## About `_env`
@@ -144,7 +146,7 @@ User: *"How do I make the colors / which data field shows configurable?"*
 ## Per-OS notes
 
 - **Windows:** `Get-Process simulator` for sim check. `Start-Sleep 2` after launch. JDK chain: `JAVA_HOME` → `~/.jdks` → Microsoft → Eclipse Adoptium → Oracle Java.
-- **macOS:** `pgrep -x simulator` for sim check. Sim launched via `open -a`. JDK chain: `JAVA_HOME` → `/Library/Java/JavaVirtualMachines/*-17*` → Homebrew `openjdk@17`.
+- **macOS:** `pgrep -x simulator` for sim check. Sim launched via the SDK's `bin/connectiq` (opens `bin/ConnectIQ.app`; there is no `bin/simulator` on macOS), then waits up to 30s for the process. JDK chain: `JAVA_HOME` → `/Library/Java/JavaVirtualMachines/*-17*` → Homebrew `openjdk@17`.
 - **Linux:** Same Bash scripts as macOS. JDK chain: `JAVA_HOME` → `/usr/lib/jvm/java-17-*` → `/opt/jdk-17*`. Garmin officially supports Ubuntu LTS — other distros may need extra Qt libraries (`libxcb-xinerama0`, etc.) for the simulator.
 
 When in doubt about a per-OS edge case, fall through to [troubleshooting.md](references/troubleshooting.md).

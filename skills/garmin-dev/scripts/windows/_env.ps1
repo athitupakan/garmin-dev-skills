@@ -51,7 +51,8 @@ $env:PATH = "$jdk\bin;$env:PATH"
 # ---- Connect IQ SDK auto-detect ------------------------------------------
 $sdkRoot = "$env:APPDATA\Garmin\ConnectIQ\Sdks"
 $Sdk = Get-ChildItem "$sdkRoot\connectiq-sdk-win-*" -Directory -ErrorAction SilentlyContinue |
-       Sort-Object Name -Descending | Select-Object -First 1 -ExpandProperty FullName
+       Sort-Object { ($_.Name -split '-')[4..6] -join '-' } -Descending |
+       Select-Object -First 1 -ExpandProperty FullName
 if (-not $Sdk) {
     throw "Connect IQ SDK not found under $sdkRoot. Install via SDK Manager: https://developer.garmin.com/connect-iq/sdk/"
 }

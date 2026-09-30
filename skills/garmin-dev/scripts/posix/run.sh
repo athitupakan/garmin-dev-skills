@@ -9,11 +9,17 @@ mkdir -p bin
 
 if ! pgrep -x simulator >/dev/null 2>&1; then
   echo "Launching simulator..."
-  case "$os_id" in
-    mac) (open -a "$Sdk/bin/simulator" >/dev/null 2>&1 || open "$Sdk/bin/simulator" >/dev/null 2>&1) || true ;;
-    lin) ("$Sdk/bin/simulator" >/dev/null 2>&1 &) ; disown 2>/dev/null || true ;;
-  esac
-  sleep 2
+  # SDK's own launcher: opens bin/ConnectIQ.app on macOS, runs bin/simulator on Linux.
+  ("$Sdk/bin/connectiq" >/dev/null 2>&1 &)
+  for _ in $(seq 1 30); do
+    pgrep -x simulator >/dev/null 2>&1 && break
+    sleep 1
+  done
+  if ! pgrep -x simulator >/dev/null 2>&1; then
+    echo "Simulator did not start within 30s. Try: \"$Sdk/bin/connectiq\"" >&2
+    exit 1
+  fi
+  sleep 3
 fi
 
 echo "Compiling..."

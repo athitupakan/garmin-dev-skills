@@ -11,15 +11,26 @@ mkdir -p bin
 marker="$(mktemp -t garmin-watch.XXXXXX)"
 monkeydo_pid=""
 
+# monkeydo is a wrapper script; its java child survives unless killed explicitly.
+stop_monkeydo() {
+  [ -n "$monkeydo_pid" ] || return 0
+  pkill -P "$monkeydo_pid" 2>/dev/null || true
+  kill "$monkeydo_pid" 2>/dev/null || true
+  monkeydo_pid=""
+}
+
 cleanup() {
-  [ -n "$monkeydo_pid" ] && kill "$monkeydo_pid" 2>/dev/null || true
+  stop_monkeydo
   rm -f "$marker"
 }
-trap cleanup EXIT INT TERM
+trap cleanup EXIT
+# A trap handler that doesn't exit lets the loop keep running after Ctrl+C / kill.
+trap 'exit 130' INT
+trap 'exit 143' TERM
 
 build_and_push() {
   if "$Sdk/bin/monkeyc" -d "$Device" -f "$Jungle" -o "$Prg" -y "$Key"; then
-    [ -n "$monkeydo_pid" ] && kill "$monkeydo_pid" 2>/dev/null || true
+    stop_monkeydo
     "$Sdk/bin/monkeydo" "$Prg" "$Device" >/dev/null 2>&1 &
     monkeydo_pid=$!
     echo "[$(date +%H:%M:%S)] PUSHED"
